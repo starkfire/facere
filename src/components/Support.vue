@@ -1,7 +1,7 @@
 <template>
     <div class="support">
         <a-row>
-            <a-col :xs="24" :lg="8">
+            <a-col :xs="24" :lg="8" data-aos="fade-right" data-aos-duration="1000">
                 <p id="title">Support</p>
                 <p id="description">
                     Featurist will help you grow your audience as an artist and 
@@ -13,7 +13,7 @@
             </a-col>
             <a-col :xs="24" :lg="15">
                 <div class="feedback">
-                    <a-row id="feedback-one">
+                    <a-row id="feedback-one" data-aos="fade-left" data-aos-duration="1000">
                         <a-col :xs="24" :lg="6" id="head">
                             <img src="../assets/img/sgan_5.jpg" />
                         </a-col>
@@ -26,7 +26,7 @@
                             </p>
                         </a-col>
                     </a-row>
-                    <a-row id="feedback-two">
+                    <a-row id="feedback-two" data-aos="fade-right" data-aos-duration="1200">
                         <a-col :xs="24" :lg="18" id="content">
                             <p id="name">Jane Doe</p>
                             <p id="title">Musician</p>
@@ -39,7 +39,7 @@
                             <img src="../assets/img/sgan_3.jpg" />
                         </a-col>
                     </a-row>
-                    <a-row id="feedback-three">
+                    <a-row id="feedback-three" data-aos="fade-left" data-aos-duration="1400">
                         <a-col :xs="24" :lg="6" id="head">
                             <img src="../assets/img/sgan_4.jpg" />
                         </a-col>
