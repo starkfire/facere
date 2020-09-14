@@ -92,6 +92,24 @@ export default {
             margin-right: 5px;
         }
 
+        @keyframes animateArrow {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(8px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        #arrow {
+            animation: animateArrow 1s ease-in-out infinite;
+        }
+
         &:hover {
             background-color: #525252;
         }
