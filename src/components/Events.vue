@@ -14,6 +14,7 @@
 						<a-row class="event-one" data-aos="fade-up" data-aos-duration="1500">
 							<a-col id="poster" :xs="24" :lg="12">
 								<a id="sale">25% Sale</a>
+								<a id="ends-on"><a-icon type="hourglass" id="sale-icon" /> {{ days }}d : {{ hours }}h : {{ minutes }}m : {{ seconds }}s</a>
 							</a-col>
 							<a-col id="details" :xs="24" :lg="12">
 								<p id="event-name">Live: John Doe</p>
@@ -43,7 +44,48 @@
 </template>
 <script>
 export default {
-	name: 'Events'
+	name: 'Events',
+	data() {
+		return {
+			start: '',
+			end: '',
+			interval: '',
+			days: '',
+			minutes: '',
+			hours: '',
+			seconds: ''
+		}
+	},
+	mounted() {
+		this.start = new Date("Sep 14, 2020 06:00:00").getTime()
+		this.end = new Date("Dec 4, 2020 20:00:00").getTime()
+		this.timerCount(this.start, this.end)
+		this.interval = setInterval(() => {
+			this.timerCount(this.start, this.end)
+		}, 1000)
+	},
+	methods: {
+		timerCount(start, end) {
+			let now = new Date().getTime()
+			let distance = start - now
+			let passTime = end - now
+
+			if (distance < 0 && passTime < 0) {
+				clearInterval(this.interval)
+				return
+			} else if (distance < 0 && passTime > 0) {
+				this.calcTime(passTime)
+			} else if (distance > 0 && passTime > 0) {
+				this.calcTime(distance)
+			}
+		},
+		calcTime (dist) {
+			this.days = Math.floor(dist / (1000 * 60 * 60 * 24))
+			this.hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+			this.minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60))
+			this.seconds = Math.floor((dist % (1000 * 60)) / 1000)
+		}
+	}
 }
 </script>
 <style lang="scss" scoped>
@@ -99,6 +141,15 @@ export default {
 				100% {
 					transform: rotate(360deg);
 				}
+			}
+		}
+
+		#ends-on {
+			@extend %sale-tag;
+			background-color: rgb(194, 92, 92);
+
+			#sale-icon {
+				animation: rotateClock 1.5s ease-in-out infinite;
 			}
 		}
 
