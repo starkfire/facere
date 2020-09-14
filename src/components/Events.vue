@@ -24,6 +24,9 @@
 					<div class="event">
 						<a-row class="event-two" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
 							<a-col id="poster" :xs="24" :lg="12">
+								<div id="vr-ready">
+									<img src="../assets/img/virtual-reality.svg" /> VR-READY
+								</div>
 							</a-col>
 							<a-col id="details" :xs="24" :lg="12">
 								<p id="event-name">P. Roxas Exhibit</p>
@@ -69,6 +72,20 @@ export default {
 	#poster {
 		min-height: 250px;
 		border-radius: 15px 0px 0px 15px;
+
+		#vr-ready {
+			position: absolute;
+			bottom: 28px;
+			font-weight: 700;
+			color: #000;
+			border-radius: 0px 8px 8px 0px;
+			background-color: #fff;
+			padding: 7px 14px;
+
+			img {
+				height: 28px;
+			}
+		}
 	}
 
 	#details {
