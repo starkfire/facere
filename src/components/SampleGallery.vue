@@ -11,7 +11,7 @@
 
         <a-row class="sample-collection">
             <a-col :xs="24" :lg="8">
-                <div class="artwork" id="abstract-one">
+                <div class="artwork" id="abstract-one" data-aos="fade-right" data-aos-duration="2000">
                     <div class="overlay">
                         <div class="tooltip">
                             <p id="title">The Winds of Winter</p>
@@ -30,7 +30,7 @@
                 </div>
             </a-col>
             <a-col :xs="24" :lg="8">
-                <div class="artwork" id="abstract-two">
+                <div class="artwork" id="abstract-two" data-aos="fade-up" data-aos-duration="2000">
                     <div class="overlay">
                         <div class="tooltip">
                             <p id="title">Any Colour You Like</p>
@@ -50,7 +50,7 @@
                 </div>
             </a-col>
             <a-col :xs="24" :lg="8">
-                <div class="artwork" id="abstract-three">
+                <div class="artwork" id="abstract-three" data-aos="fade-left" data-aos-duration="2000">
                     <div class="overlay">
                         <div class="tooltip">
                             <p id="title">Strawberry Swing</p>
