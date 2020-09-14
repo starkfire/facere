@@ -4,7 +4,7 @@
             <a-col :xs="24" :lg="8" data-aos="fade-right" data-aos-duration="1000">
                 <p id="title">Support</p>
                 <p id="description">
-                    Featurist will help you grow your audience as an artist and 
+                    Facere will help you grow your audience as an artist and 
                     fund your projects.
                 </p>
                 <a id="read-article">
@@ -22,7 +22,7 @@
                             <p id="title">Painter</p>
                             <p id="comment">
                                 "I already tried tons of platforms where I can showcase my artworks 
-                                but none of these platforms really helped me other than Featurist."
+                                but none of these platforms really helped me other than Facere."
                             </p>
                         </a-col>
                     </a-row>
@@ -31,7 +31,7 @@
                             <p id="name">Jane Doe</p>
                             <p id="title">Musician</p>
                             <p id="comment">
-                                "It's actually astonishing that Featurist is much more effective at
+                                "It's actually astonishing that Facere is much more effective at
                                 growing your audience than any other services."
                             </p>
                         </a-col>
