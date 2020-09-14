@@ -13,6 +13,7 @@
 					<div class="event">
 						<a-row class="event-one" data-aos="fade-up" data-aos-duration="1500">
 							<a-col id="poster" :xs="24" :lg="12">
+								<a id="sale">25% Sale</a>
 							</a-col>
 							<a-col id="details" :xs="24" :lg="12">
 								<p id="event-name">Live: John Doe</p>
@@ -72,6 +73,34 @@ export default {
 	#poster {
 		min-height: 250px;
 		border-radius: 15px 0px 0px 15px;
+
+		%sale-tag {
+			cursor: default;
+			padding: 7px 14px;
+			margin-top: 28px;
+			position: relative;
+			display: inline-block;
+			color: #fff;
+		}
+
+		#sale {
+			@extend %sale-tag;
+			background-color: rgb(189, 52, 52);
+
+			@keyframes rotateClock {
+				0% {
+					transform: rotate(0deg);
+				}
+
+				50% {
+					transform: rotate(180deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		}
 
 		#vr-ready {
 			position: absolute;
