@@ -180,5 +180,42 @@ export default {
 			}
 		}
 	}
+
+	.goto-gallery {
+		margin: 21px 0px;
+
+		a {
+			padding: 7px 21px;
+			border: 2px solid #444;
+			font-size: 14px;
+			font-weight: 700;
+			color: #444;
+			letter-spacing: 1.6px;
+			border-radius: 12px;
+
+			@keyframes animateArrow {
+				0% {
+					transform: translateX(0px);
+				}
+
+				50% {
+					transform: translate(8px);
+				}
+
+				100% {
+					transform: translateX(0px);
+				}
+			}
+
+			&:hover {
+				border-color: #000;
+				color: #000;
+				
+				#arrow {
+					animation: animateArrow 1s ease-in-out infinite;
+				}
+			}
+		}
+	}
 }
 </style>
