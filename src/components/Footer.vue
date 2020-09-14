@@ -2,7 +2,7 @@
     <div class="footer">
         <a-row>
             <a-col id="left" :xs="24" :lg="12">
-                <p id="logo">Ft</p>
+                <p id="logo">Facere</p>
             </a-col>
             <a-col id="right" :xs="24" :lg="12">
                 <ul>
@@ -24,7 +24,6 @@ export default {
 .footer {
 	background-color: #ddd;
 	min-height: 300px;
-    margin-top: 64px;
 	text-align: center;
 
 	#left {
