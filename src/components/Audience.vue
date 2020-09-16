@@ -146,56 +146,35 @@ export default {
     background-position: $x, $y;
 }
 
-#artists {
-    @include setCardBackground('../assets/img/pexels-valeriia-miller-3547625.jpg', 50%, 50%);
-
+@mixin fadeOverlayOnHover($r, $g, $b) {
     #overlay {
-        background-color: rgba(77, 233, 103, 0.45);
+        background-color: rgba($r, $g, $b, 0.45);
 
         &:hover {
-            background-color: rgba(77, 233, 103, 0);
+            background-color: rgba($r, $g, $b, 0);
             transition-duration: 0.5s;
         }
     }
+}
+
+#artists {
+    @include setCardBackground('../assets/img/pexels-valeriia-miller-3547625.jpg', 50%, 50%);
+    @include fadeOverlayOnHover(77, 233, 103);
 }
 
 #musicians {
     @include setCardBackground('../assets/img/pexels-markus-spiske-92080.jpg', 50%, 50%);
-
-    #overlay {
-        background-color: rgba(74, 201, 194, 0.45);
-
-        &:hover {
-            background-color: rgba(74, 201, 194, 0);
-            transition-duration: 0.5s;
-        }
-    }
+    @include fadeOverlayOnHover(74, 201, 194);
 }
 
 #content-creators {
     @include setCardBackground('../assets/img/abstract-backlit-conceptual-1722072.jpg', 50%, 50%);
-
-    #overlay {
-        background-color: rgba(236, 74, 68, 0.45);
-
-        &:hover {
-            background-color: rgba(236, 74, 68, 0);
-            transition-duration: 0.5s;
-        }
-    }
+    @include fadeOverlayOnHover(236, 74, 68);
 }
 
 #everyone {
     @include setCardBackground('../assets/img/adult-audience-black-and-white-1666816.jpg', 50%, 50%);
-
-    #overlay {
-        background-color: rgba(255, 168, 55, 0.45);
-
-        &:hover {
-            background-color: rgba(255, 168, 55, 0);
-            transition-duration: 0.5s;
-        }
-    }
+    @include fadeOverlayOnHover(255, 168, 55);
 }
 
 </style>
