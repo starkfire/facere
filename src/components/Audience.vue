@@ -71,6 +71,7 @@ export default {
     margin: 16px 4px;
     min-height: 450px;
     cursor: pointer;
+    font-family: 'Manrope', sans-serif;
 
     // fade animation for card
     @keyframes fluidFadeIn {
@@ -125,14 +126,12 @@ export default {
         animation: fadeIn 1.5s ease-in-out;
 
         #title {
-            font-family: 'Manrope', sans-serif;
             font-size: 32px;
             font-weight: 700;
             color: #fff;
         }
 
         #description {
-            font-family: 'Manrope', sans-serif;
             font-size: 16px;
             font-weight: 300;
             color: #fff;
