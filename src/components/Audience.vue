@@ -140,10 +140,14 @@ export default {
     }
 }
 
-#artists {
-    background-image: url('../assets/img/pexels-valeriia-miller-3547625.jpg');
+@mixin setCardBackground($url, $x, $y) {
+    background-image: url($url);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: $x, $y;
+}
+
+#artists {
+    @include setCardBackground('../assets/img/pexels-valeriia-miller-3547625.jpg', 50%, 50%);
 
     #overlay {
         background-color: rgba(77, 233, 103, 0.45);
@@ -156,9 +160,7 @@ export default {
 }
 
 #musicians {
-    background-image: url('../assets/img/pexels-markus-spiske-92080.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
+    @include setCardBackground('../assets/img/pexels-markus-spiske-92080.jpg', 50%, 50%);
 
     #overlay {
         background-color: rgba(74, 201, 194, 0.45);
@@ -171,9 +173,7 @@ export default {
 }
 
 #content-creators {
-    background-image: url('../assets/img/abstract-backlit-conceptual-1722072.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
+    @include setCardBackground('../assets/img/abstract-backlit-conceptual-1722072.jpg', 50%, 50%);
 
     #overlay {
         background-color: rgba(236, 74, 68, 0.45);
@@ -186,9 +186,7 @@ export default {
 }
 
 #everyone {
-    background-image: url('../assets/img/adult-audience-black-and-white-1666816.jpg');
-    background-size: cover;
-    background-position: 50% 50%;
+    @include setCardBackground('../assets/img/adult-audience-black-and-white-1666816.jpg', 50%, 50%);
 
     #overlay {
         background-color: rgba(255, 168, 55, 0.45);
