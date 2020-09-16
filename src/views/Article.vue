@@ -18,6 +18,9 @@ export default {
         Navbar,
         SampleArticle,
         Footer
+    },
+    beforeMount() {
+        window.scrollTo(0, 0)
     }
 }
 </script>
