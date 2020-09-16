@@ -7,9 +7,11 @@
                     Facere will help you grow your audience as an artist and 
                     fund your projects.
                 </p>
-                <a id="read-article">
-                    <a-icon id="read" type="read" /> Why be a backer? Read our article. <a-icon id="arrow" type="arrow-right" />
-                </a>
+                <router-link to="/article">
+                    <a id="read-article">
+                        <a-icon id="read" type="read" /> Why be a backer? Read our article. <a-icon id="arrow" type="arrow-right" />
+                    </a>
+                </router-link>
             </a-col>
             <a-col :xs="24" :lg="15">
                 <div class="feedback">
