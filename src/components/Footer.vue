@@ -6,10 +6,9 @@
             </a-col>
             <a-col id="right" :xs="24" :lg="12">
                 <ul>
-                    <li><router-link to="/events">Events</router-link></li>
-                    <li><router-link to="/events">Shows</router-link></li>
-                    <li><router-link to="/about">Gallery</router-link></li>
-                    <li><router-link to="/donate">Donate</router-link></li>
+                    <li><a href="#">Explore</a></li>
+					<li><a href="#">Creators</a></li>
+					<li><a href="#">About</a></li>
                 </ul>
             </a-col>
         </a-row>
@@ -60,7 +59,7 @@ export default {
 			color: #222;
 
 			&:hover {
-				color: #fac999;
+				color: #000000;
 				transition-duration: 0.2s;
 			}
 		}

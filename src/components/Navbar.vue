@@ -6,9 +6,8 @@
 			</a-col>
 			<a-col :xs="18" :lg="12" id="nav-buttons">
 				<ul>
-					<li><a href="#">Galleries</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">Donate</a></li>
+					<li><a href="#">Explore</a></li>
+					<li><a href="#">Creators</a></li>
 					<li><a href="#">About</a></li>
 				</ul>
 			</a-col>
@@ -70,7 +69,7 @@ export default {
 			color: #000;
 
 			&:hover {
-				color: #fac999;
+				color: #fcab5a;
 				transition-duration: 0.2s;
 			}
 		}
@@ -92,7 +91,7 @@ export default {
 			color: white;
 
 			&:hover {
-				background-color: #fcac5d;
+				background-color: #fcab5a;
 			}
 		}
 	}
