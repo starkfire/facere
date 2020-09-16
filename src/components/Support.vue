@@ -7,10 +7,8 @@
                     Facere will help you grow your audience as an artist and 
                     fund your projects.
                 </p>
-                <router-link to="/article">
-                    <a id="read-article">
-                        <a-icon id="read" type="read" /> Why be a backer? Read our article. <a-icon id="arrow" type="arrow-right" />
-                    </a>
+                <router-link id="read-article" to="/article">
+                    <a-icon id="read" type="read" /> Why be a backer? Read our article. <a-icon id="arrow" type="arrow-right" />
                 </router-link>
             </a-col>
             <a-col :xs="24" :lg="15">
@@ -87,8 +85,8 @@ export default {
         padding: 16px 32px;
         border-radius: 12px;
         font-weight: 700;
-        color: #ddd;
-        background-color: #444;
+        color: #000;
+        background-color: rgb(255, 165, 61);
 
         #read {
             margin-right: 5px;
@@ -113,7 +111,8 @@ export default {
         }
 
         &:hover {
-            background-color: #525252;
+            background-color: rgb(255, 152, 35);
+            color: #fff;
         }
     }
 }
