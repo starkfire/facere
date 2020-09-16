@@ -69,7 +69,7 @@
                 </div>
             </a-col>
         </a-row>
-		<div class="goto-gallery">
+		<div class="goto-gallery" data-aos="fade-right" data-aos-duration="2000">
 			<a href="#">GO TO GALLERY <a-icon id="arrow" type="arrow-right" /></a>
 		</div>
     </div>
