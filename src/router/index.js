@@ -7,17 +7,29 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Facere'
+    }
   },
   {
     path: '/article',
-    component: () => import('../views/Article.vue')
+    component: () => import('../views/Article.vue'),
+    meta: {
+      title: 'Facere'
+    }
   }
 ]
 
 const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+
+  next()
 })
 
 export default router
