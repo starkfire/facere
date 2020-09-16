@@ -181,6 +181,21 @@ export default {
 		}
 	}
 
+	#abstract-one {
+		background-image: url('../assets/img/abstract-abstract-painting-art-contemporary-art-1572386-compressed.jpg');
+		background-size: cover;
+	}
+
+	#abstract-two {
+		background-image: url('../assets/img/black-and-grey-abstract-painting-1142006-compressed.jpg');
+		background-size: cover;
+	}
+
+	#abstract-three {
+		background-image: url('../assets/img/red-orange-waves-wallpaper-1998479-compressed.jpg');
+		background-size: cover;
+	}
+
 	.goto-gallery {
 		margin: 21px 0px;
 
