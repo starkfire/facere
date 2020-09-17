@@ -37,7 +37,7 @@ export default {
 .music {
     min-height: 540px;
     background: url('../assets/img/ocean.jpg');
-    // background-repeat: repeat-y;
+    background-size: 300px;
 
     #left {
         padding: 15% 0px 15% 40px;
