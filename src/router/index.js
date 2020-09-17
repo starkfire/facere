@@ -18,6 +18,13 @@ const routes = [
     meta: {
       title: 'Facere'
     }
+  },
+  {
+    path: '/portfolio',
+    component: () => import('../views/Portfolio.vue'),
+    meta: {
+      title: 'Portfolio'
+    }
   }
 ]
 
