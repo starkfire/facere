@@ -1,10 +1,10 @@
 <template>
     <div class="concepts">
         <div class="text">
-            <p id="title">
+            <p id="title" data-aos="fade-up" data-aos-duration="1500">
                 Share your concepts to the world
             </p>
-            <p id="description">
+            <p id="description" data-aos="fade-up" data-aos-duration="1500">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
             </p>
         </div>
