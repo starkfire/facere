@@ -4,7 +4,7 @@
 			<a-col :xs="24" :lg="8" data-aos="fade-right" data-aos-duration="1500">
 				<p id="title">Events</p>
 				<p id="description">
-					Far away and too busy to attend an event? Featurist lets you buy tickets and
+					Far away and too busy to attend an event? Facere lets you buy tickets and
 					attend live events and shows virtually on any device.
 				</p>
 			</a-col>
@@ -18,7 +18,7 @@
 							</a-col>
 							<a-col id="details" :xs="24" :lg="12">
 								<p id="event-name">Live: John Doe</p>
-								<p id="event-date">Dec. 4, 2020 | 8:00PM PHT</p>
+								<p id="event-date">May 8, 2021 | 8:00PM PHT</p>
 								<a id="reserve">Reserve (&#8369; 130.00)</a>
 							</a-col>
 						</a-row>
@@ -58,7 +58,7 @@ export default {
 	},
 	mounted() {
 		this.start = new Date("Sep 14, 2020 06:00:00").getTime()
-		this.end = new Date("Dec 4, 2020 20:00:00").getTime()
+		this.end = new Date("May 8, 2021 20:00:00").getTime()
 		this.timerCount(this.start, this.end)
 		this.interval = setInterval(() => {
 			this.timerCount(this.start, this.end)
@@ -203,6 +203,22 @@ export default {
 			background-color: rgb(7, 177, 199);
 			color: #fff;
 		}
+	}
+}
+
+.event-one {
+	#poster {
+		background-image: url('../assets/img/photo-1493225457124-a3eb161ffa5f.jpeg');
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+}
+
+.event-two {
+	#poster {
+		background-image: url('../assets/img/photo-1518998053901-5348d3961a04.jpeg');
+		background-size: cover;
+		background-position: 50% 50%;
 	}
 }
 
